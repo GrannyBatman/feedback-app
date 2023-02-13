@@ -42,17 +42,15 @@ function FeedbackForm() {
 
 		if (feedbackEdit.edit === true) {
 			// update existing feedback
-			updateFeedback({
+			updateFeedback(feedbackEdit.item.id, {
 				text,
 				rating,
-				id: feedbackEdit.item.id,
 			})
 		} else {
 			// add new feedback
 			addFeedback({
 				text,
 				rating,
-				id: crypto.randomUUID(),
 			})
 		}
 

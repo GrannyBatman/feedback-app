@@ -1,12 +1,18 @@
 import { useFeedback } from '../context/FeedbackContext'
 import FeedbackItem from './FeedbackItem'
+import Spinner from './shared/Spinner'
 
 function FeedbackList() {
-	const { feedback } = useFeedback()
+	const { feedback, isLoading } = useFeedback()
 
-	if (!feedback || feedback.length < 1) {
+	if (!isLoading && (!feedback || feedback.length < 1)) {
 		return <p>No feedback yet</p>
 	}
+
+	if (isLoading) {
+		return <Spinner />
+	}
+
 	return (
 		<div className="feedback-list">
 			{feedback.map(item => (

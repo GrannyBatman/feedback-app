@@ -1,0 +1,24 @@
+{
+	"feedback": [
+		{
+			"id": "1",
+			"rating": 10,
+			"text": "Best ever feed"
+		},
+		{
+			"id": "2",
+			"rating": 9,
+			"text": "I am sexist and I know it"
+		},
+		{
+			"id": "3",
+			"rating": 7,
+			"text": "Winter is comming"
+		},
+		{
+			"text": "hello world!",
+			"rating": 5,
+			"id": "5Fz37HJ"
+		}
+	]
+}
